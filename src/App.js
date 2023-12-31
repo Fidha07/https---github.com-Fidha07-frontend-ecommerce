@@ -6,7 +6,8 @@ import Home from './Pages/Home';
 import HomeCategory from './Pages/HomeCategory';
 import Cart from './Pages/Cart';
 import LoginSignup from'./Pages/LoginSignup';
-
+import Footer from './Components/Footer/Footer';
+import women_banner from './Components/Assets/banner_women.png'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/women' element={<HomeCategory category="women"/>}/>
+        <Route path='/women' element={<HomeCategory banner={women_banner} category="women"/>}/>
         <Route path='/girls' element={<HomeCategory category="girl"/>}/>
         <Route path='/accessories' element={<HomeCategory category="accessorie"/>}/>
         <Route path="/product" element={<product/>}></Route>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/login' element={<LoginSignup/>}></Route>
        
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
