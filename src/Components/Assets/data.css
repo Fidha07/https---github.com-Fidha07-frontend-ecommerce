@@ -1,0 +1,28 @@
+#1{
+    width: 20px;
+    height: 70px;
+    border: 5px;
+    object-fit: none;
+    object-position: 200px 100px;
+}
+#2{
+    width: 20px;
+    height: 70px;
+    border: 5px solid black;
+    object-fit: none;
+    object-position: left top;
+}
+#3{
+    width: 20px;
+    height: 70px;
+    border: 5px;
+    object-fit: none;
+    object-position: right top;
+}
+#4{
+    width: 20px;
+    height: 70px;
+    border: 5px;
+    object-fit: none;
+    object-position: bottom top;
+}
